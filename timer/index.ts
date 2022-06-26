@@ -1,4 +1,4 @@
-import { TimerHandlers } from './handler';
+import { TimerHandler } from './handler';
 import { Config, ITimer, ITimerHandler, Module } from './types';
 
 /**
@@ -21,7 +21,7 @@ class Timer implements ITimer {
 }
 
 /* DEPENDENCY INJECTIONS */
-const handler = new TimerHandlers();
+const handler = new TimerHandler();
 Timer.inject(handler);
 
 export { Timer };

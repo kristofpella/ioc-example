@@ -5,7 +5,7 @@ import { Config, ITimer, ITimerHandler } from "./types";
  * Class for containing handlers for Timer
  * Possible future features are resuming, autostarting, restarting
  */
-class TimerHandlers implements ITimerHandler {
+class TimerHandler implements ITimerHandler {
     /**
      * Private variable list
      * @param {number} expiryTime - The timestamp when the timer should expire in ms
@@ -45,4 +45,4 @@ class TimerHandlers implements ITimerHandler {
     }
 }
 
-export { TimerHandlers };
+export { TimerHandler };
