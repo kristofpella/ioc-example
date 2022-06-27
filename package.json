@@ -16,7 +16,8 @@
     "jest": "^28.1.1"
   },
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "start": "ts-node app.ts"
   },
   "author": "Kristof Pella",
   "license": "ISC"

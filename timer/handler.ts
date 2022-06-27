@@ -39,6 +39,10 @@ class TimerHandler implements ITimerHandler {
         this.timeout = setTimeout(this.timeOutHandler, this.expiryTime);
     }
 
+    // FIXME: stopTimer doesn't work properly yet, because if we call it
+    // at some point after init the this.timeout value is still undefined
+    // so we need a JIRA ticket on making sure that stopTimer always receives the
+    // up-to-date value for the this.timeout
     stopTimer() {
         console.log(`[Timer] stopping timer.`);
         clearTimeout(this.timeout);
